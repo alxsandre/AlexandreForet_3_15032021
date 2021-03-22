@@ -23,11 +23,12 @@ header {
 
 .search {
     @include flex__column;
-    background-color: $tertiary;
+    background-color: $light-grey;
 
     &__bar {
         display: flex;
-
+        background-color: $grey;
+        
         &__logo {
            
         }
@@ -35,7 +36,7 @@ header {
         input {
             padding-left: 0.9rem;
             border: 0;
-            background-color: $tertiary;
+            background-color: $grey;
         }
 
         input::placeholder {

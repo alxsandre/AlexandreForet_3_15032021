@@ -37,15 +37,16 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #99E2D0;
+  background-color: #F6F6F6;
 }
 .search__bar {
   display: flex;
+  background-color: #EAEAEA;
 }
 .search__bar input {
   padding-left: 0.9rem;
   border: 0;
-  background-color: #99E2D0;
+  background-color: #EAEAEA;
 }
 .search__bar input::placeholder {
   color: black;
