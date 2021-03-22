@@ -6,7 +6,7 @@
 }
 
 html {
-    font-family: "Roboto-Medium";
+    font-family: "Roboto-Medium", Arial, Helvetica;
 
     h1 {
         font-size: 1.5rem;
@@ -19,39 +19,121 @@ html {
 
 header {
     @include flex__column;
+
+    .search {
+        @include flex__column;
+        background-color: $light-grey;
+        width: 100%;
+
+        &__bar {
+            display: flex;
+            justify-content: center;
+            background-color: $grey;
+            padding: 1rem;
+            width: 100%;
+            
+            input {
+                border: 0;
+                background-color: $grey;
+                font-size: 1rem;
+                width: 8rem;
+                margin-left: 1rem;
+                font-family: "Roboto-Bold", Arial, Helvetica;
+            }
+
+            input::placeholder {
+                color: black;
+                font-family: "Roboto-Bold", Arial, Helvetica;
+            }
+
+            input:focus {
+                outline-width: 0;
+            }
+        }
+        
+        h1 {
+            padding-top: 1.5rem;
+        }
+
+        p {
+            font-size: 1.2rem;
+            font-family: "Roboto-Light", Arial, Helvetica;
+        }
+
+        h1, p {
+            text-align: center;
+        }
+
+        &__button {
+            font-family: "Roboto-medium", Arial, Helvetica;
+            border: 0;
+            color: white;
+            background-color: $primary;
+            border-radius: 2rem;
+            padding: .6rem;
+            box-shadow: 0 .3rem .1rem $grey;
+            margin: 1.3rem 0 2rem 0;
+        }
+    }
 }
 
-.search {
+
+section {
     @include flex__column;
-    background-color: $light-grey;
+    margin: 2.5rem 1rem 2.5rem 1rem;
 
-    &__bar {
+    h2 {
+        align-self: flex-start;
+        margin-bottom: 1rem;
+    }
+}
+
+.section--fonctionnement {
+    .button {
         display: flex;
-        background-color: $grey;
-        
-        &__logo {
-           
-        }
-        
-        input {
-            padding-left: 0.9rem;
-            border: 0;
-            background-color: $grey;
+        flex-direction: row;
+        align-items: center;
+        border: 0;
+        text-align: center;
+        width: 335px;
+        background-color: $light-grey;
+        border-radius: 1rem;
+        padding: 1rem;
+        margin: .3rem;
+        font-family: "Roboto-Medium", Arial, Helvetica;
+        font-size: 1.1rem;
+
+        .fas {
+            padding-right: 1.5rem;
         }
 
-        input::placeholder {
-            color: black;
-            font-family: "Roboto-Bold";
+        &::before {
+            width: 1.1rem;
+            height: 1.1rem;
+            background-color: $primary;
+            position: relative;
+            left: -1.65rem;
+            padding: 0.2rem;
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
 
-        input:focus {
-            outline-width: 0;
+        &__1::before {
+            content: "1";
         }
-    }
-    
-    h1, p {
-        padding-left: 15%;
-        padding-right: 15%;
-    }
+
+        &__2::before {
+            content: "2";
+        }
+
+        &__3::before {
+            content: "3";
+        }
+
+        
+    }   
 }
 

@@ -7,6 +7,11 @@
     font-family: "Roboto-Bold";
     src: url("./asset/fonts/Roboto-Bold.ttf");
   }
+
+@font-face {
+    font-family: "Roboto-Light";
+    src: url("./asset/fonts/Roboto-Light.ttf");
+  }
   
 @font-face {
     font-family: "Shrikhand";
@@ -19,6 +24,7 @@ $secondary: #FF79DA;
 $tertiary: #99E2D0;
 $light-grey: #F6F6F6;
 $grey: #EAEAEA;
+$blue: #D76CDA;
 
 
 @mixin flex__column {
