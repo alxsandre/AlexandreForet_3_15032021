@@ -21,6 +21,10 @@
   list-style: none;
 }
 
+a:link {
+  text-decoration: none;
+}
+
 html {
   font-family: "Roboto-Medium", Arial, Helvetica;
 }
@@ -28,13 +32,16 @@ html h1 {
   font-size: 1.5rem;
 }
 html h2 {
-  font-size: 1.44rem;
+  font-size: 1.47rem;
 }
 
 header {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+header img {
+  margin: 0.8rem;
 }
 header .search {
   display: flex;
@@ -44,6 +51,7 @@ header .search {
   width: 100%;
 }
 header .search__bar {
+  box-shadow: inset 0rem 0.1rem 0.1rem rgba(0, 0, 0, 0.1);
   display: flex;
   justify-content: center;
   background-color: #EAEAEA;
@@ -79,20 +87,21 @@ header .search__button {
   font-family: "Roboto-medium", Arial, Helvetica;
   border: 0;
   color: white;
-  background-color: #9356DC;
+  background-color: #D76CDA;
   border-radius: 2rem;
-  padding: 0.6rem;
-  box-shadow: 0 0.3rem 0.1rem #EAEAEA;
+  padding: 0.9rem;
+  box-shadow: 0 0.1rem 0.2rem rgba(0, 0, 0, 0.4);
   margin: 1.3rem 0 2rem 0;
 }
 
 section {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-wrap: wrap;
   margin: 2.5rem 1rem 2.5rem 1rem;
+  justify-content: space-around;
 }
 section h2 {
+  width: 100%;
   align-self: flex-start;
   margin-bottom: 1rem;
 }
@@ -135,6 +144,74 @@ section h2 {
 }
 .section--fonctionnement .button__3::before {
   content: "3";
+}
+
+.card {
+  box-shadow: -5px 5px 20px 10px #EAEAEA;
+  border-radius: 20px;
+  max-width: 375px;
+  margin-top: 1rem;
+}
+.card .image__container {
+  height: 150px;
+  overflow: hidden;
+  border-radius: 20px 20px 0px 0px;
+}
+.card .image__container img {
+  position: relative;
+  top: -4rem;
+  width: 100%;
+  border-radius: 20px 20px 0 0;
+}
+.card .image__container .img__2 {
+  top: -10rem;
+}
+.card .image__container .img__4 {
+  top: -4.5rem;
+}
+.card .card__sub {
+  width: 100%;
+  padding: 10px;
+  color: black;
+  margin: 0;
+  border-radius: 0 0 30px 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.card .card__sub h3 {
+  font-family: "Roboto-Bold", Arial, Helvetica;
+  margin: 0.2rem;
+}
+.card .card__sub p {
+  font-family: "Roboto-Light", Arial, Helvetica;
+  margin: 0.2rem;
+}
+.card .card__sub .far {
+  font-size: 1.3rem;
+  padding-right: 1rem;
+}
+
+.footer {
+  background-color: #353535;
+  padding: 1.3rem 1rem 2rem 1rem;
+}
+.footer__logo {
+  color: white;
+  display: inline-block;
+  font-family: "Shrikhand", Arial, Helvetica;
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+}
+.footer__link {
+  margin-bottom: 0.3rem;
+}
+.footer__link .fas {
+  padding-right: 0.5rem;
+}
+.footer__link a, .footer__link .fas {
+  color: white;
 }
 
 /*# sourceMappingURL=style.css.map */
