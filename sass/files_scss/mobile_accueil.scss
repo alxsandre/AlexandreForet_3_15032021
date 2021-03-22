@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+html {
+    font-family: "Roboto-Medium";
+
+    h1 {
+        font-size: 1.5rem;
+    }
+    
+    h2 {
+        font-size: 1.44rem;
+    }
+}
+
+header {
+    @include flex__column;
+}
+
+.search {
+    @include flex__column;
+    background-color: $tertiary;
+
+    &__bar {
+        display: flex;
+
+        &__logo {
+           
+        }
+        
+        input {
+            padding-left: 0.9rem;
+            border: 0;
+            background-color: $tertiary;
+        }
+
+        input::placeholder {
+            color: black;
+            font-family: "Roboto-Bold";
+        }
+
+        input:focus {
+            outline-width: 0;
+        }
+    }
+    
+    h1, p {
+        padding-left: 15%;
+        padding-right: 15%;
+    }
+}
+

@@ -1,8 +1,2 @@
-@import "files_scss/variables.scss";
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    list-style: none;
-}
+@import "files_scss/variables_&_fonts.scss";
+@import "files_scss/mobile_accueil.scss";
