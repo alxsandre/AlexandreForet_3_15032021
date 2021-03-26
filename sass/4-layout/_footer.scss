@@ -1,0 +1,24 @@
+.footer {
+    background-color: $matt-black;
+    padding: 1.3rem 1rem 2rem 1rem;
+
+    &__logo {
+        color: white;
+        display: inline-block;
+        font-family: "Shrikhand", Arial, Helvetica;
+        font-size: 1.3rem;
+        margin-bottom: 1rem;
+    }
+
+    &__link {
+        margin-bottom: 0.3rem;
+
+        .fas {
+            padding-right: .5rem;
+        }
+
+        a, .fas {
+            color: white;
+        }
+    }
+}

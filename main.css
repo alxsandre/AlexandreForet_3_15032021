@@ -14,6 +14,45 @@
   font-family: "Shrikhand";
   src: url("./asset/fonts/Shrikhand-Regular.ttf");
 }
+.background__img {
+  width: 100%;
+}
+
+.header__logo {
+  margin: 0.8rem;
+}
+
+.footer {
+  background-color: #353535;
+  padding: 1.3rem 1rem 2rem 1rem;
+}
+.footer__logo {
+  color: white;
+  display: inline-block;
+  font-family: "Shrikhand", Arial, Helvetica;
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+}
+.footer__link {
+  margin-bottom: 0.3rem;
+}
+.footer__link .fas {
+  padding-right: 0.5rem;
+}
+.footer__link a, .footer__link .fas {
+  color: white;
+}
+
+.title__menu {
+  font-family: "Shrikhand", Arial, Helvetica;
+  bottom: 0;
+  background-color: #EAEAEA;
+  text-align: center;
+  width: 100%;
+  padding: 0.42rem;
+  border-radius: 30px 30px 0 0;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -39,9 +78,6 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-header img {
-  margin: 0.8rem;
 }
 header .search {
   display: flex;
@@ -193,25 +229,4 @@ section h2 {
   padding-right: 1rem;
 }
 
-.footer {
-  background-color: #353535;
-  padding: 1.3rem 1rem 2rem 1rem;
-}
-.footer__logo {
-  color: white;
-  display: inline-block;
-  font-family: "Shrikhand", Arial, Helvetica;
-  font-size: 1.3rem;
-  margin-bottom: 1rem;
-}
-.footer__link {
-  margin-bottom: 0.3rem;
-}
-.footer__link .fas {
-  padding-right: 0.5rem;
-}
-.footer__link a, .footer__link .fas {
-  color: white;
-}
-
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=main.css.map */
