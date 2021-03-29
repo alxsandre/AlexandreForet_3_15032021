@@ -4,6 +4,7 @@
 @import "2-tools/fonts";
 
 // 3-basics
+@import "3-basics/buttons";
 @import "3-basics/images";
 
 // 4 - LAYOUT
@@ -11,7 +12,8 @@
 @import "4-layout/footer";
 
 // 5 - LAYOUT
-@import "5-modules/title";
+
 
 // 6 - PAGES
 @import "6-pages.scss/accueil";
+@import "6-pages.scss/menu"

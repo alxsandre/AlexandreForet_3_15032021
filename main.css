@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: "Roboto-Medium";
   src: url("./asset/fonts/Roboto-Medium.ttf");
@@ -14,6 +15,17 @@
   font-family: "Shrikhand";
   src: url("./asset/fonts/Shrikhand-Regular.ttf");
 }
+.btn {
+  font-family: "Roboto-medium", Arial, Helvetica;
+  border: 0;
+  color: white;
+  background-color: #D76CDA;
+  border-radius: 2rem;
+  padding: 0.9rem;
+  box-shadow: 0 0.1rem 0.2rem rgba(0, 0, 0, 0.4);
+  margin: 1.3rem 0 2rem 0;
+}
+
 .background__img {
   width: 100%;
 }
@@ -41,16 +53,6 @@
 }
 .footer__link a, .footer__link .fas {
   color: white;
-}
-
-.title__menu {
-  font-family: "Shrikhand", Arial, Helvetica;
-  bottom: 0;
-  background-color: #EAEAEA;
-  text-align: center;
-  width: 100%;
-  padding: 0.42rem;
-  border-radius: 30px 30px 0 0;
 }
 
 * {
@@ -119,30 +121,20 @@ header .search p {
 header .search h1, header .search p {
   text-align: center;
 }
-header .search__button {
-  font-family: "Roboto-medium", Arial, Helvetica;
-  border: 0;
-  color: white;
-  background-color: #D76CDA;
-  border-radius: 2rem;
-  padding: 0.9rem;
-  box-shadow: 0 0.1rem 0.2rem rgba(0, 0, 0, 0.4);
-  margin: 1.3rem 0 2rem 0;
-}
 
-section {
+.section__accueil {
   display: flex;
   flex-wrap: wrap;
   margin: 2.5rem 1rem 2.5rem 1rem;
   justify-content: space-around;
 }
-section h2 {
+.section__accueil h2 {
   width: 100%;
   align-self: flex-start;
   margin-bottom: 1rem;
 }
 
-.section--fonctionnement .button {
+.section__accueil--fonctionnement .button {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -156,10 +148,10 @@ section h2 {
   font-family: "Roboto-Medium", Arial, Helvetica;
   font-size: 1.1rem;
 }
-.section--fonctionnement .button .fas {
+.section__accueil--fonctionnement .button .fas {
   padding-right: 1.5rem;
 }
-.section--fonctionnement .button::before {
+.section__accueil--fonctionnement .button::before {
   width: 1.1rem;
   height: 1.1rem;
   background-color: #9356DC;
@@ -172,13 +164,13 @@ section h2 {
   justify-content: center;
   align-items: center;
 }
-.section--fonctionnement .button__1::before {
+.section__accueil--fonctionnement .button__1::before {
   content: "1";
 }
-.section--fonctionnement .button__2::before {
+.section__accueil--fonctionnement .button__2::before {
   content: "2";
 }
-.section--fonctionnement .button__3::before {
+.section__accueil--fonctionnement .button__3::before {
   content: "3";
 }
 
@@ -227,6 +219,86 @@ section h2 {
 .card .card__sub .far {
   font-size: 1.3rem;
   padding-right: 1rem;
+}
+
+.menu {
+  border-radius: 30px 30px 0 0;
+  background-color: #F6F6F6;
+  top: -40px;
+  position: relative;
+  padding: 0 1rem 0 1rem;
+}
+.menu__title {
+  font-family: "Shrikhand", Arial, Helvetica;
+  font-size: 1.9rem;
+  padding: 0.42rem;
+  padding-top: 1rem;
+  font-weight: normal;
+}
+
+.block__line {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.plat {
+  padding-top: 1.3rem;
+}
+.plat__title {
+  font-family: "Roboto-Light", Arial, Helvetica;
+  color: black;
+  text-transform: uppercase;
+  font-size: 1.1rem;
+}
+.plat__title::after {
+  display: block;
+  position: relative;
+  content: "";
+  top: 5px;
+  width: 40px;
+  height: 3px;
+  background-color: #99E2D0;
+}
+.plat__description {
+  background-color: white;
+  border-radius: 20px;
+  margin-top: 1rem;
+  box-shadow: 0px 0px 10px 3px #EAEAEA;
+  cursor: pointer;
+  display: flex;
+  position: relative;
+  align-items: center;
+  overflow: hidden;
+  height: 100%;
+}
+.plat__description h3 {
+  font-family: "Roboto-Bold", Arial, Helvetica;
+}
+.plat__description .plat__detail {
+  font-family: "Roboto-Light", Arial, Helvetica;
+}
+.plat__description .plat__price {
+  font-family: "Roboto-Bold", Arial, Helvetica;
+}
+.plat__description .block__plat {
+  width: 100%;
+  padding: 1rem;
+  height: 4.6rem;
+}
+.plat__description:hover::after {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-size: 1.3rem;
+  content: "";
+  background-color: #99E2D0;
+  color: white;
+  height: 4.6rem;
+  width: 25%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -1,0 +1,92 @@
+.menu {
+    border-radius: 30px 30px 0 0;
+    background-color: $light-grey;
+    top: -40px;
+    position: relative;
+    padding: 0 1rem 0 1rem;
+
+    &__title {
+        font-family: "Shrikhand", Arial, Helvetica;
+        font-size: 1.9rem;
+        padding: .42rem;
+        padding-top: 1rem;
+        font-weight: normal;
+    }
+}
+
+.block__line {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.plat {
+    padding-top: 1.3rem;
+
+    &__title {
+        font-family: "Roboto-Light", Arial, Helvetica;
+        color: black;
+        text-transform: uppercase;
+        font-size: 1.1rem;
+
+        &::after {
+            display: block;
+            position: relative;
+            content: "";
+            top: 5px;
+            width: 40px;
+            height: 3px;
+            background-color: $green;
+        }
+    }
+
+    &__description {
+        background-color: white;
+        border-radius: 20px;
+      
+        margin-top: 1rem;
+        box-shadow: 0px 0px 10px 3px $grey;
+        cursor: pointer;
+        display: flex;
+        position: relative;
+        align-items: center;
+        overflow: hidden;
+        height: 100%;
+  
+        h3 {
+            font-family: "Roboto-Bold", Arial, Helvetica; 
+        }
+
+        .plat__detail {
+            font-family: "Roboto-Light", Arial, Helvetica;
+        }
+
+        .plat__price {
+            font-family: "Roboto-Bold", Arial, Helvetica;
+        }
+
+        .block__plat {
+            width: 100%;
+            padding: 1rem;
+            height: 4.6rem;
+        }
+
+        &:hover::after {
+            font-family: "Font Awesome 5 Free";
+            font-weight: 900;
+            font-size: 1.3rem;
+            content: "\f058";
+            background-color: $green;
+            color: white;
+            height: 4.6rem;
+            width: 25%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+}
+
+
+

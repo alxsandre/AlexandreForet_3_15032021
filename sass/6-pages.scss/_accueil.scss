@@ -69,21 +69,12 @@ header {
             text-align: center;
         }
 
-        &__button {
-            font-family: "Roboto-medium", Arial, Helvetica;
-            border: 0;
-            color: white;
-            background-color: $blue;
-            border-radius: 2rem;
-            padding: .9rem;
-            box-shadow: 0 .1rem 0.2rem rgba(0, 0, 0, 0.4);
-            margin: 1.3rem 0 2rem 0;
-        }
+
     }
 }
 
 
-section {
+.section__accueil {
     display: flex;
     flex-wrap: wrap;
     margin: 2.5rem 1rem 2.5rem 1rem;
@@ -96,7 +87,7 @@ section {
     }
 }
 
-.section--fonctionnement {
+.section__accueil--fonctionnement {
     .button {
         display: flex;
         flex-direction: row;
