@@ -10,8 +10,11 @@
     crossorigin="anonymous"
   ></script>
 </head>
-<body>
+<body class="body__background">
     <header class="header">
+        <a href="../index.html" class="arrow">
+            <i class="fas fa-arrow-left"></i>
+        </a>
         <img  class="header__logo"
               src="../asset/images/logo/ohmyfood.png"
               alt="logo"
@@ -24,7 +27,9 @@
     <section class="menu">
         <div class="block__line"> 
             <h1 class="menu__title">À la française</h1> 
-            <i class="far fa-heart"></i>
+            <div class="heart--fill">
+                <i class="far fa-heart"></i>
+            </div>
         </div>
         <section class="plat">
             <h2 class="plat__title">Entrées</h2>
@@ -133,7 +138,7 @@
                 </div>
             </div>
         </section>
-        <button class="btn">Commander</button>
+        <button class="btn btn--menu">Commander</button>
     </section>
 
     <footer class="footer">
@@ -142,7 +147,7 @@
             <li class="footer__link"><i class="fas fa-utensils"></i><a href=""><i></i>Proposer un restaurant</a></li>
             <li class="footer__link"><i class="fas fa-hands-helping"></i><a href=""><i></i>Devenir partenaire</a></li>
             <li class="footer__link"><a href="">Mentions légales</a></li>
-            <li class="footer__link"><a href="">Contact</a></li>
+            <li class="footer__link"><a href="mailto: contact@ohmyfood.com">Contact</a></li>
         </ul>
     </footer>
 </body>

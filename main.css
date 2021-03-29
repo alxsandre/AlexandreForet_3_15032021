@@ -19,15 +19,64 @@
   font-family: "Roboto-medium", Arial, Helvetica;
   border: 0;
   color: white;
-  background-color: #D76CDA;
+  background: radial-gradient(rgba(205, 105, 218, 0.8), #cd69da);
   border-radius: 2rem;
   padding: 0.9rem;
-  box-shadow: 0 0.1rem 0.2rem rgba(0, 0, 0, 0.4);
+  box-shadow: 0 0.1rem 0.6rem rgba(95, 69, 69, 0.4);
   margin: 1.3rem 0 2rem 0;
+  cursor: pointer;
+}
+.btn:focus {
+  outline: 0;
 }
 
+.btn--menu {
+  margin: 3rem 20% 3.5rem 20%;
+  padding: 1.1rem;
+  font-size: 0.9rem;
+}
+
+.arrow {
+  position: absolute;
+  top: 1.3rem;
+  left: 5%;
+  color: black;
+}
+
+.heart--fill {
+  position: relative;
+}
+
+.fa-heart {
+  background-clip: text;
+  -webkit-background-clip: text;
+  position: absolute;
+}
+
+.heart--fill::after {
+  font-family: "Font Awesome 5 Free";
+  content: "";
+  font-weight: 800;
+  position: absolute;
+  transform-origin: bottom;
+  animation-name: progress-heart;
+  animation-duration: 5000ms;
+}
+
+@keyframes progress-heart {
+  0% {
+    transform: scaleY(0);
+  }
+  100% {
+    transform: scaleY(1);
+  }
+}
 .background__img {
   width: 100%;
+}
+
+.body__background {
+  background-color: #F6F6F6;
 }
 
 .header__logo {
@@ -227,6 +276,8 @@ header .search h1, header .search p {
   top: -40px;
   position: relative;
   padding: 0 1rem 0 1rem;
+  display: flex;
+  flex-direction: column;
 }
 .menu__title {
   font-family: "Shrikhand", Arial, Helvetica;
@@ -251,12 +302,13 @@ header .search h1, header .search p {
   color: black;
   text-transform: uppercase;
   font-size: 1.1rem;
+  margin-bottom: 1.3rem;
 }
 .plat__title::after {
   display: block;
   position: relative;
   content: "";
-  top: 5px;
+  top: 7px;
   width: 40px;
   height: 3px;
   background-color: #99E2D0;
