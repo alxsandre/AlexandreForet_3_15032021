@@ -25,11 +25,27 @@
     opacity: 1;
   }
 }
+@keyframes display-core {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes remove-spinner {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
 .btn {
   font-family: "Roboto-medium", Arial, Helvetica;
   border: 0;
   color: white;
-  background: radial-gradient(rgba(205, 105, 218, 0.8), #cd69da);
+  background: linear-gradient(#FF79DA, #9356DC);
   border-radius: 2rem;
   padding: 0.9rem;
   box-shadow: 0 0.1rem 0.6rem rgba(95, 69, 69, 0.4);
@@ -77,7 +93,10 @@
   animation-name: progress-heart;
   animation-duration: 0.5s;
   font-size: 1.5rem;
-  color: #cd69da;
+  background: linear-gradient(#9356DC, #FF79DA);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
 }
 
 @keyframes progress-heart {
@@ -94,6 +113,56 @@
   width: 100%;
 }
 
+.header--accueil,
+.section__accueil,
+.footer--accueil {
+  opacity: 0;
+  animation-name: display-core;
+  animation-delay: 3s;
+  animation-fill-mode: forwards;
+}
+
+.spinner {
+  position: fixed;
+  top: calc(50% - 50px);
+  left: calc(50% - 50px);
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  width: 100px;
+  height: 100px;
+  animation-name: remove-spinner;
+  animation-delay: 3s;
+  animation-fill-mode: forwards;
+}
+.spinner .ball {
+  width: 20px;
+  height: 20px;
+  background: #9356DC;
+  border-radius: 50%;
+  animation: bouncer 0.5s cubic-bezier(0.19, 0.57, 0.3, 0.98) infinite alternate;
+}
+.spinner .ball:nth-child(2) {
+  animation-delay: 0.1s;
+  opacity: 0.8;
+}
+.spinner .ball:nth-child(3) {
+  animation-delay: 0.2s;
+  opacity: 0.6;
+}
+.spinner .ball:nth-child(4) {
+  animation-delay: 0.3s;
+  opacity: 0.4;
+}
+
+@keyframes bouncer {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-100px);
+  }
+}
 .body__background {
   background-color: #F6F6F6;
 }
@@ -275,6 +344,7 @@ header .search h1, header .search p {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  align-content: center;
 }
 .card .card__sub h3 {
   font-family: "Roboto-Bold", Arial, Helvetica;
@@ -284,9 +354,10 @@ header .search h1, header .search p {
   font-family: "Roboto-Light", Arial, Helvetica;
   margin: 0.2rem;
 }
-.card .card__sub .far {
-  font-size: 1.3rem;
-  padding-right: 1rem;
+.card .card__sub .heart--fill {
+  z-index: 5;
+  margin-right: 20px;
+  margin-bottom: 25px;
 }
 
 .menu {

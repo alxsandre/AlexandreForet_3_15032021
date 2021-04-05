@@ -172,6 +172,7 @@ header {
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
+        align-content: center;
 
         h3 {
             font-family: "Roboto-Bold", Arial, Helvetica;
@@ -183,11 +184,11 @@ header {
             margin: 0.2rem;  
         }
 
-        .far {
-            font-size: 1.3rem;
-            padding-right: 1rem;
+        .heart--fill {
+            z-index: 5;
+            margin-right: 20px;
+            margin-bottom: 25px;
         }
-    
     }
 }
 

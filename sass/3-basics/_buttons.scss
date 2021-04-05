@@ -2,7 +2,7 @@
     font-family: "Roboto-medium", Arial, Helvetica;
     border: 0;
     color: white;
-    background: radial-gradient(rgba(205, 105, 218, 0.80),rgba(205, 105, 218, 1));
+    background: linear-gradient($secondary, $primary);
     border-radius: 2rem;
     padding: .9rem;
     box-shadow: 0 .1rem 0.6rem rgba(95, 69, 69, 0.4);
@@ -52,7 +52,11 @@
     animation-name: progress-heart;
     animation-duration: 0.5s;
     font-size: 1.5rem;
-    color: rgba(205, 105, 218, 1);
+    background: linear-gradient($primary, $secondary);
+   // color: rgba(205, 105, 218, 1);
+   background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
 }
 
 @keyframes progress-heart {
