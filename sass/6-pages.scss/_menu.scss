@@ -45,25 +45,44 @@
         }
     }
 
+    &__description--animation1 {
+        animation: 1s ease-in forwards display-plats;
+    }
+
+    &__description--animation2 {
+        animation: 1s ease-in 0.3s forwards display-plats;
+    }
+
+    &__description--animation3 {
+        animation: 1s ease-in 0.6s forwards display-plats;
+    }
+
     &__description {
         background-color: white;
         border-radius: 20px;
-      
+        opacity: 0;
         margin-top: 1rem;
         box-shadow: 0px 0px 10px 3px $grey;
         cursor: pointer;
         display: flex;
         position: relative;
         align-items: center;
-        overflow: hidden;
         height: 100%;
+        overflow: hidden;
+
   
         h3 {
             font-family: "Roboto-Bold", Arial, Helvetica; 
+             white-space: nowrap;
+             overflow: hidden;
+             text-overflow: ellipsis;
         }
 
         .plat__detail {
             font-family: "Roboto-Light", Arial, Helvetica;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
         }
 
         .plat__price {
@@ -74,20 +93,55 @@
             width: 100%;
             padding: 1rem;
             height: 4.6rem;
+            overflow: hidden;
         }
 
-        &:hover::after {
+        .plat__check {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: transparent;
+            border: 0;
+        }
+
+        .plat__check:focus {
+            position: relative;
+            background-color: $green;
+            height: 4.6rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            outline:0;
+            animation: 0.5s ease-in forwards buttoncheck-background;
+        }
+
+        .plat__check:focus::after {
+            position: absolute;
             font-family: "Font Awesome 5 Free";
             font-weight: 900;
             font-size: 1.3rem;
             content: "\f058";
-            background-color: $green;
             color: white;
-            height: 4.6rem;
-            width: 25%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
+            animation: 0.5s ease-in forwards buttoncheck-police;
+            outline:0;
+        }
+
+    
+        @keyframes buttoncheck-background {
+            0% {
+                width: 0%;
+            }
+            100% {
+                width: 25%;
+            }
+        }
+        @keyframes buttoncheck-police {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
         }
     }
 }

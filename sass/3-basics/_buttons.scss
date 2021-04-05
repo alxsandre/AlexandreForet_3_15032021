@@ -12,6 +12,12 @@
     &:focus {
         outline: 0;
     }
+
+    &:hover {
+        filter: brightness(1.1);
+        box-shadow: 0 .1rem 0.4rem rgba(80, 60, 60, 0.8);
+        transition: filter 0.5s, box-shadow 0.5s;
+    }
 }
 
 .btn--menu {
@@ -29,31 +35,33 @@
 
 .heart--fill{
     position: relative;
+    right: 5%;
 }
 
 .fa-heart {
-    background-clip: text;
-    -webkit-background-clip: text;
     position: absolute;
+    font-size: 1.5rem;
 }
 
-.heart--fill::after {
+.heart--fill:hover::after {
     font-family: "Font Awesome 5 Free"; 
     content: "\f004";
     font-weight: 800;
     position: absolute;
     transform-origin: bottom;
     animation-name: progress-heart;
-    animation-duration: 5000ms;
+    animation-duration: 0.5s;
+    font-size: 1.5rem;
+    color: rgba(205, 105, 218, 1);
 }
 
 @keyframes progress-heart {
     0% {
         transform: scaleY(0);
-       
+        transform: scaleX(0);
     }
     100% {
         transform: scaleY(1);
-    
+        transform: scaleX(1);
     }
 }

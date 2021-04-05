@@ -15,6 +15,16 @@
   font-family: "Shrikhand";
   src: url("./asset/fonts/Shrikhand-Regular.ttf");
 }
+@keyframes display-plats {
+  0% {
+    transform: translateY(10px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
 .btn {
   font-family: "Roboto-medium", Arial, Helvetica;
   border: 0;
@@ -28,6 +38,11 @@
 }
 .btn:focus {
   outline: 0;
+}
+.btn:hover {
+  filter: brightness(1.1);
+  box-shadow: 0 0.1rem 0.4rem rgba(80, 60, 60, 0.8);
+  transition: filter 0.5s, box-shadow 0.5s;
 }
 
 .btn--menu {
@@ -45,30 +60,34 @@
 
 .heart--fill {
   position: relative;
+  right: 5%;
 }
 
 .fa-heart {
-  background-clip: text;
-  -webkit-background-clip: text;
   position: absolute;
+  font-size: 1.5rem;
 }
 
-.heart--fill::after {
+.heart--fill:hover::after {
   font-family: "Font Awesome 5 Free";
   content: "";
   font-weight: 800;
   position: absolute;
   transform-origin: bottom;
   animation-name: progress-heart;
-  animation-duration: 5000ms;
+  animation-duration: 0.5s;
+  font-size: 1.5rem;
+  color: #cd69da;
 }
 
 @keyframes progress-heart {
   0% {
     transform: scaleY(0);
+    transform: scaleX(0);
   }
   100% {
     transform: scaleY(1);
+    transform: scaleX(1);
   }
 }
 .background__img {
@@ -313,23 +332,39 @@ header .search h1, header .search p {
   height: 3px;
   background-color: #99E2D0;
 }
+.plat__description--animation1 {
+  animation: 1s ease-in forwards display-plats;
+}
+.plat__description--animation2 {
+  animation: 1s ease-in 0.3s forwards display-plats;
+}
+.plat__description--animation3 {
+  animation: 1s ease-in 0.6s forwards display-plats;
+}
 .plat__description {
   background-color: white;
   border-radius: 20px;
+  opacity: 0;
   margin-top: 1rem;
   box-shadow: 0px 0px 10px 3px #EAEAEA;
   cursor: pointer;
   display: flex;
   position: relative;
   align-items: center;
-  overflow: hidden;
   height: 100%;
+  overflow: hidden;
 }
 .plat__description h3 {
   font-family: "Roboto-Bold", Arial, Helvetica;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .plat__description .plat__detail {
   font-family: "Roboto-Light", Arial, Helvetica;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .plat__description .plat__price {
   font-family: "Roboto-Bold", Arial, Helvetica;
@@ -338,19 +373,50 @@ header .search h1, header .search p {
   width: 100%;
   padding: 1rem;
   height: 4.6rem;
+  overflow: hidden;
 }
-.plat__description:hover::after {
+.plat__description .plat__check {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  border: 0;
+}
+.plat__description .plat__check:focus {
+  position: relative;
+  background-color: #99E2D0;
+  height: 4.6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  outline: 0;
+  animation: 0.5s ease-in forwards buttoncheck-background;
+}
+.plat__description .plat__check:focus::after {
+  position: absolute;
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
   font-size: 1.3rem;
   content: "";
-  background-color: #99E2D0;
   color: white;
-  height: 4.6rem;
-  width: 25%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  animation: 0.5s ease-in forwards buttoncheck-police;
+  outline: 0;
+}
+@keyframes buttoncheck-background {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 25%;
+  }
+}
+@keyframes buttoncheck-police {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
