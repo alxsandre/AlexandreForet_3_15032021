@@ -38,6 +38,12 @@
     right: 5%;
 }
 
+.heart--menu {
+    position: relative;
+    right: 50px;
+    top: -10px;
+}
+
 .fa-heart {
     position: absolute;
     font-size: 1.5rem;
@@ -53,10 +59,19 @@
     animation-duration: 0.5s;
     font-size: 1.5rem;
     background: linear-gradient($primary, $secondary);
-   // color: rgba(205, 105, 218, 1);
-   background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
+}
+
+.card__labelnew::after {
+    content: 'Nouveau';
+    position: absolute;
+    top: 30px;
+    right: 15px;
+    background-color: $green;
+    color: $green-bold;
+    padding: .4rem .7rem .4rem .7rem;
+    border-radius: 3px;
 }
 
 @keyframes progress-heart {

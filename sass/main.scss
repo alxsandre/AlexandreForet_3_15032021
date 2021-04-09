@@ -5,11 +5,13 @@
 // 2 - TOOLS
 @import "2-tools/fonts";
 @import "2-tools/animations";
+@import "2-tools/mediaqueries";
 
 // 3-basics
 @import "3-basics/buttons";
 @import "3-basics/images";
-@import "3-basics/loader";
+//@import "3-basics/loader";
+@import "3-basics/general";
 
 // 4 - LAYOUT
 @import "4-layout/body";
