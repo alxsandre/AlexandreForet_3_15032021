@@ -10,7 +10,7 @@
 
     &__title {
         font-family: "Shrikhand", Arial, Helvetica;
-        font-size: 1.9rem;
+        font-size: 1.6rem;
         padding: .42rem;
         padding-top: 1rem;
         font-weight: normal;
@@ -124,24 +124,6 @@
             color: white;
             animation: 0.5s ease-in forwards buttoncheck-police;
             outline:0;
-        }
-
-    
-        @keyframes buttoncheck-background {
-            0% {
-                width: 0%;
-            }
-            100% {
-                width: 25%;
-            }
-        }
-        @keyframes buttoncheck-police {
-            0% {
-                transform: rotate(0deg);
-            }
-            100% {
-                transform: rotate(360deg);
-            }
         }
     }
 }

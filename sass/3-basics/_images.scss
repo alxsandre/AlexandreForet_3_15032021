@@ -3,27 +3,53 @@
 }
 
 @include sm {
-.background__container {
+    .background__container {
+        height: 300px;
+        overflow: hidden;
+
+        .background__img {
+            object-fit: cover;
+            position: relative;
+
+            @include sm {
+                bottom: 100px;
+            }
+
+            @include md {
+                bottom: 200px;
+            }
+            @include lg {
+                bottom: 280px;
+            }
+            @include xl {
+                bottom: 330px;
+            }
+        }
+    }
+}
+
+.background__container--noteenchantee {
     height: 300px;
     overflow: hidden;
 
     .background__img {
         object-fit: cover;
         position: relative;
+        bottom: 100px;
 
         @include sm {
-            bottom: 100px;
+            bottom: 200px;
         }
 
         @include md {
-            bottom: 200px;
+            bottom: 400px;
         }
         @include lg {
-            bottom: 280px;
+            bottom: 600px;
         }
         @include xl {
-            bottom: 330px;
+            bottom: 700px;
         }
     }
 }
-}
+

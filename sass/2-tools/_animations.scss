@@ -18,3 +18,31 @@
     from { opacity: 1}
     to { opacity: 0}
 }
+
+@keyframes progress-heart {
+    0% {
+        transform: scaleY(0);
+        transform: scaleX(0);
+    }
+    100% {
+        transform: scaleY(1);
+        transform: scaleX(1);
+    }
+}
+
+@keyframes buttoncheck-background {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 25%;
+    }
+}
+@keyframes buttoncheck-police {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
