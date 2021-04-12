@@ -31,13 +31,14 @@
 }
 
 @keyframes buttoncheck-background {
-    0% {
+    from {
         width: 0%;
     }
-    100% {
+    to {
         width: 25%;
     }
 }
+
 @keyframes buttoncheck-police {
     0% {
         transform: rotate(0deg);

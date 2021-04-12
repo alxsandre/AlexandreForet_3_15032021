@@ -8,6 +8,7 @@
     box-shadow: 0 .1rem 0.6rem rgba(95, 69, 69, 0.4);
     margin: 1.3rem 0 2rem 0;
     cursor: pointer;
+    transition: filter 0.5s, box-shadow 0.5s;
 
     &:focus {
         outline: 0;
@@ -16,7 +17,6 @@
     &:hover {
         filter: brightness(1.1);
         box-shadow: 0 .1rem 0.4rem rgba(80, 60, 60, 0.8);
-        transition: filter 0.5s, box-shadow 0.5s;
     }
 }
 
