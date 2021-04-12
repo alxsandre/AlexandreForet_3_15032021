@@ -47,3 +47,8 @@
         transform: rotate(360deg);
     }
 }
+
+@keyframes bouncer {
+    from { transform: translateY(0)}
+    to { transform: translateY(-100px)}
+}
