@@ -16,7 +16,7 @@
     "url": "https://github.com/alxsandre/AlexandreForet_3_15032021/issues"
   },
   "homepage": "https://github.com/alxsandre/AlexandreForet_3_15032021#readme",
-  "dependencies": {
+  "dev-dependencies": {
     "sass": "^1.32.8"
   }
 }
