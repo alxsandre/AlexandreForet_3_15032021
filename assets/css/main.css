@@ -1,19 +1,19 @@
 @charset "UTF-8";
 @font-face {
   font-family: "Roboto-Medium";
-  src: url("./asset/fonts/Roboto-Medium.ttf");
+  src: url("../fonts/Roboto-Medium.ttf");
 }
 @font-face {
   font-family: "Roboto-Bold";
-  src: url("./asset/fonts/Roboto-Bold.ttf");
+  src: url("../fonts/Roboto-Bold.ttf");
 }
 @font-face {
   font-family: "Roboto-Light";
-  src: url("./asset/fonts/Roboto-Light.ttf");
+  src: url("../fonts/Roboto-Light.ttf");
 }
 @font-face {
   font-family: "Shrikhand";
-  src: url("./asset/fonts/Shrikhand-Regular.ttf");
+  src: url("../fonts/Shrikhand-Regular.ttf");
 }
 @keyframes display-plats {
   0% {
