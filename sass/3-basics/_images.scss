@@ -12,17 +12,17 @@
             position: relative;
 
             @include sm {
-                bottom: 100px;
+                bottom: 6.25rem;
             }
 
             @include md {
-                bottom: 200px;
+                bottom: 12.25rem;
             }
             @include lg {
-                bottom: 280px;
+                bottom: 17.5rem;
             }
             @include xl {
-                bottom: 330px;
+                bottom: 20.625rem;
             }
         }
     }
@@ -35,20 +35,20 @@
     .background__img {
         object-fit: cover;
         position: relative;
-        bottom: 100px;
+        bottom: 6.25rem;
 
         @include sm {
-            bottom: 200px;
+            bottom: 12.25rem;
         }
 
         @include md {
-            bottom: 400px;
+            bottom: 25rem;
         }
         @include lg {
-            bottom: 600px;
+            bottom: 37.5rem;
         }
         @include xl {
-            bottom: 700px;
+            bottom: 43.75rem;
         }
     }
 }

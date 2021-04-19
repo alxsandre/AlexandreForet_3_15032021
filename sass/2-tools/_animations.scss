@@ -1,6 +1,6 @@
 @keyframes display-plats {
     0% {
-        transform: translateY(10px);
+        transform: translateY(0.625rem);
         opacity: 0;
     }
     100% {
@@ -50,5 +50,5 @@
 
 @keyframes bouncer {
     from { transform: translateY(0)}
-    to { transform: translateY(-100px)}
+    to { transform: translateY(-6.25rem)}
 }

@@ -1,7 +1,7 @@
 .menu {
     border-radius: 30px 30px 0 0;
     background-color: $light-grey;
-    top: -40px;
+    top: -2.5rem;
     position: relative;
     padding: 0 1rem 0 1rem;
     display: flex;
@@ -38,9 +38,9 @@
             display: block;
             position: relative;
             content: "";
-            top: 7px;
-            width: 40px;
-            height: 3px;
+            top: 0.438rem;
+            width: 2.5rem;
+            height: 0.188rem;
             background-color: $green;
         }
     }

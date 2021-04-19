@@ -40,8 +40,8 @@
 
 .heart--menu {
     position: relative;
-    right: 50px;
-    top: -10px;
+    right: 3.125rem;
+    top: -0.625rem;
 }
 
 .fa-heart {
@@ -66,8 +66,8 @@
 .card__labelnew::after {
     content: 'Nouveau';
     position: absolute;
-    top: 30px;
-    right: 15px;
+    top: 1.875rem;
+    right: 0.938rem;
     background-color: $green;
     color: $green-bold;
     padding: .4rem .7rem .4rem .7rem;

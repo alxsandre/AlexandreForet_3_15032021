@@ -69,7 +69,7 @@ header {
         align-items: center;
         border: 0;
         text-align: center;
-        width: 335px;
+        width: 20.93rem;
         background-color: $light-grey;
         border-radius: 1rem;
         padding: 1rem;
@@ -119,16 +119,16 @@ header {
     margin-top: 1rem;
 
     .image__container {
-        height: 150px;
+        height: 9.375rem;
         overflow: hidden;
         border-radius: 20px 20px 0px 0px;
-        
-            img {
-                position: relative;
-                top: -4rem;
-                width: 100%;
-                border-radius: 20px 20px 0 0;
-            }
+
+        img {
+            position: relative;
+            top: -4rem;
+            width: 100%;
+            border-radius: 20px 20px 0 0;
+        }
 
             .img__2 {
                 top: -10rem;
